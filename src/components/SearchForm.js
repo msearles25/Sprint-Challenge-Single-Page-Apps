@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
+  Card,
   CardImg,
   CardText
 } from 'reactstrap';
@@ -36,17 +37,14 @@ export default function SearchForm(props) {
             value={searchTerm}
           />
           <div>
-            {/* <ul> */}
               {searchResults.map(c => (
-                // <li key={c.id}>{c.name}</li>
-              <NewCard key={c.id}>
+              <Card key={c.id}>
                 <NewTitle>{c.name}</NewTitle>
                 <CardImg src={c.image}/>
                 <CardText>Gender: {c.gender}</CardText>
                 <CardText>Species: {c.species}</CardText>
-              </NewCard>
+              </Card>
               ))}
-            {/* </ul> */}
           </div>
         </label>
       </form>
