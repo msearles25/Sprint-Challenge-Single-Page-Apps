@@ -4,14 +4,17 @@ import Header from "./components/Header.js";
 import WelcomePage from './components/WelcomePage';
 import CharacterList from "./components/CharacterList.js";
 
-import Button from 'reactstrap'
+import {Col} from 'reactstrap';
+import SearchForm from "./components/SearchForm.js";
 
 export default function App() {
   return (
     <main>
       <Header />
       <Route exact path='/' component={WelcomePage}/>
-      <Route path='/character-list' component={CharacterList}/>
+      <Col xs="12" s="12" md="12" >
+        <Route exact path='/character-list' component={CharacterList}/>
+      </Col>
     </main>
   );
 }
