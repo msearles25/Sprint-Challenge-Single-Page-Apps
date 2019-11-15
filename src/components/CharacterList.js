@@ -21,14 +21,12 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <div> 
         {characters.map(character => (
           <div key={character.id}>
             <h2>{character.name}</h2>
             <img src={character.image}/>
           </div>
        ))}
-      </div>
     </section>
   );
 }
