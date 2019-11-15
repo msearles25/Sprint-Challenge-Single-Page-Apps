@@ -4,6 +4,7 @@ import Header from "./components/Header.js";
 import WelcomePage from './components/WelcomePage';
 import CharacterList from "./components/CharacterList.js";
 
+import Button from 'reactstrap'
 
 export default function App() {
   return (
